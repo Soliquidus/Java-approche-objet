@@ -6,7 +6,7 @@ package fr.diginamic.operations;
  * @since 07/10/2021
  */
 public class Operations {
-    public double calcul(double a, double b, char operateur) {
+    public void calcul(double a, double b, char operateur) {
         double somme = 0;
         switch (operateur) {
             case '+':
@@ -25,6 +25,5 @@ public class Operations {
                 System.out.println("Opérateur non reconnu");
         }
         System.out.println("Le résultat avec l'opérateur " + operateur + " est : " + somme);
-        return somme;
     }
 }
