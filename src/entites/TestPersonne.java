@@ -4,23 +4,11 @@ import entites2.Personne;
 
 public class TestPersonne {
     public static void main(String[] args) {
-        Personne personne1 = new Personne();
-        personne1.nom = "Patoulacci";
-        personne1.prenom = "Robert";
-        personne1.adressePostale = new AdressePostale();
-        personne1.adressePostale.numeroRue = 3;
-        personne1.adressePostale.libelleRue = "Rue de la paix avant tout";
-        personne1.adressePostale.codePostal = 78954;
-        personne1.adressePostale.ville = "Paix-Ville";
+        AdressePostale adressePostale1 = new AdressePostale(3, "Rue de la paix avant tout", 78954, "Paix-Ville");
+        AdressePostale adressePostale2 = new AdressePostale(66, "Rue Skynet", 66666, "Armageddon");
 
-        Personne personne2 = new Personne();
-        personne2.nom = "Connor";
-        personne2.prenom = "Sarah";
-        personne2.adressePostale = new AdressePostale();
-        personne2.adressePostale.numeroRue = 66;
-        personne2.adressePostale.libelleRue = "Rue Skynet";
-        personne2.adressePostale.codePostal = 66666;
-        personne2.adressePostale.ville = "Armageddon";
+        Personne personne1 = new Personne("Patoulacci", "Robert", adressePostale1);
+        Personne personne2 = new Personne("Connor", "Sarah", adressePostale2);
 
         System.out.println("Test de l'entité personne :");
         System.out.println(personne1.nom + " " + personne1.prenom + " habite à :");
