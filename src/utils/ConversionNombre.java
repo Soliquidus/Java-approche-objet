@@ -1,5 +1,12 @@
 package utils;
 
+/**
+ * TP4 qui présente quelques fonctions utiles intégrées à Java
+ * @author Tibo Pfeifer
+ * @version 1.0
+ * @since 07/10/2021
+ */
+
 public class ConversionNombre {
     public static void main(String[] args) {
         String chaine = "12";
