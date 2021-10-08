@@ -1,8 +1,10 @@
 package fr.diginamic.essais;
 
 import fr.diginamic.operations.Operations;
+
 /**
  * TP - Autonomie - Exercice Operations
+ *
  * @author Tibo Pfeifer
  * @version 1.0
  * @since 07/10/2021
@@ -15,10 +17,10 @@ public class TestOperations {
         Operations operations = new Operations();
 
         //Essais méthode
-        operations.calcul(a, b,'+');
-        operations.calcul(a, b,'-');
-        operations.calcul(a, b,'*');
-        operations.calcul(a, b,'/');
-        operations.calcul(a, b,'d');
+        operations.calcul(a, b, '+');
+        operations.calcul(a, b, '-');
+        operations.calcul(a, b, '*');
+        operations.calcul(a, b, '/');
+        operations.calcul(a, b, 'd');
     }
 }

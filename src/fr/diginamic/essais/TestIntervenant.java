@@ -1,11 +1,11 @@
 package fr.diginamic.essais;
 
-import fr.diginamic.salaire.Intervenant;
 import fr.diginamic.salaire.Pigiste;
 import fr.diginamic.salaire.Salarie;
 
 /**
  * TP - Autonomie - Exercice CalculSalaire
+ *
  * @author Tibo Pfeifer
  * @version 1.0
  * @since 08/10/2021

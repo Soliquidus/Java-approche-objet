@@ -1,11 +1,10 @@
 package fr.diginamic.essais;
 
-import fr.diginamic.entites.Cercle;
 import fr.diginamic.operations.CalculMoyenne;
-import fr.diginamic.utils.CercleFactory;
 
 /**
  * TP - Autonomie - Exercice CalculMoyenne
+ *
  * @author Tibo Pfeifer
  * @version 1.0
  * @since 07/10/2021
@@ -13,7 +12,7 @@ import fr.diginamic.utils.CercleFactory;
 public class TestMoyenne {
     public static void main(String[] args) {
 
-        double [] notes = {10.5, 15, 17, 13.5};
+        double[] notes = {10.5, 15, 17, 13.5};
         CalculMoyenne moyenne = new CalculMoyenne(notes);
         System.out.println("Longueur du tableau : " + moyenne.tableau.length);
         System.out.println("Moyenne avec les valeurs par défaut : " + moyenne.calcul());
@@ -22,7 +21,7 @@ public class TestMoyenne {
         System.out.println("Longueur du tableau après ajout de valeurs : " + moyenne.tableau.length);
         System.out.println("Nouvelle moyenne : " + moyenne.calcul());
 
-        double [] resultats = {780.541, 35.589};
+        double[] resultats = {780.541, 35.589};
         CalculMoyenne moyenne2 = new CalculMoyenne(resultats);
         System.out.println("Longueur du tableau : " + moyenne2.tableau.length);
         System.out.println("Moyenne avec les valeurs par défaut : " + moyenne2.calcul());

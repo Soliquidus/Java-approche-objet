@@ -1,9 +1,11 @@
 package fr.diginamic.essais;
 
-import fr.diginamic.utils.CercleFactory;
 import fr.diginamic.entites.Cercle;
+import fr.diginamic.utils.CercleFactory;
+
 /**
  * TP - Autonomie - Exercice Cercle
+ *
  * @author Tibo Pfeifer
  * @version 1.0
  * @since 07/10/2021

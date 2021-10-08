@@ -6,16 +6,28 @@ package entites;
  * @since 07/10/2021
  */
 public class AdressePostale {
-    //Variables
+    /**
+     * Variables
+     */
     public int numeroRue;
     public String libelleRue;
     public int codePostal;
     public String ville;
 
-    //Constructeur
+    /**
+     * Constructeur vide
+     */
     public AdressePostale(){
 
     }
+
+    /**
+     * Constructeur
+     * @param numeroRue
+     * @param libelleRue
+     * @param codePostal
+     * @param ville
+     */
     public AdressePostale(int numeroRue, String libelleRue, int codePostal, String ville) {
         this.numeroRue = numeroRue;
         this.libelleRue = libelleRue;

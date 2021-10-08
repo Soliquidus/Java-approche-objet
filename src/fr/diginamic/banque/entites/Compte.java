@@ -2,22 +2,35 @@ package fr.diginamic.banque.entites;
 
 /**
  * Classe qui représente l'entité Compte
+ *
  * @author Tibo Pfeifer
  * @version 1.0
  * @since 07/10/2021
  */
 
 public class Compte {
-    //Variables
+    /**
+     * Attributs
+     */
     private long numeroCompte;
     private int soldeCompte;
 
-    //Constructeurs
+    /**
+     * Constructeur
+     *
+     * @param numeroCompte
+     * @param soldeCompte
+     */
     public Compte(long numeroCompte, int soldeCompte) {
         this.numeroCompte = numeroCompte;
         this.soldeCompte = soldeCompte;
     }
 
+    /**
+     * Méthode toString
+     *
+     * @return String
+     */
     @Override
     public String toString() {
         return "Compte : " +

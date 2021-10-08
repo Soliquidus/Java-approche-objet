@@ -1,10 +1,10 @@
 package fr.diginamic.essais;
 
 import fr.diginamic.entites.Theatre;
-import fr.diginamic.operations.CalculMoyenne;
 
 /**
  * TP - Autonomie - Exercice Theatre
+ *
  * @author Tibo Pfeifer
  * @version 1.0
  * @since 07/10/2021
