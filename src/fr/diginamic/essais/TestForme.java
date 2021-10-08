@@ -3,13 +3,12 @@ package fr.diginamic.essais;
 import fr.diginamic.formes.Carre;
 import fr.diginamic.formes.Cercle;
 import fr.diginamic.formes.Rectangle;
-import fr.diginamic.essais.AffichageForme;
 
 /**
  * TP - Autonomie - Exercice Forme
  * @author Tibo Pfeifer
  * @version 1.0
- * @since 07/10/2021
+ * @since 08/10/2021
  */
 public class TestForme {
     public static void main(String[] args) {
