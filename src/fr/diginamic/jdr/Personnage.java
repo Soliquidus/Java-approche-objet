@@ -37,6 +37,13 @@ public abstract class Personnage {
     public Personnage() {
     }
 
+    /**
+     * Méthode pour créer un personnage d'une classe
+     * spécifique avec des statistiques aléatoires
+     *
+     * @param personnage
+     * @return personnage
+     */
     public Personnage creerPersonnage(Personnage personnage) {
         String typePersonnage = personnage.getClass().getSimpleName();
         switch (typePersonnage) {
