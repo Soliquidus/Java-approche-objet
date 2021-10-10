@@ -1,7 +1,13 @@
-package tp.interfaces;
+package fr.diginamic.entites;
 
-public class Cercle implements ObjetGeometrique {
-
+/**
+ * TP - Autonomie - Exercice cercle
+ *
+ * @author Tibo Pfeifer
+ * @version 1.0
+ * @since 07/10/2021
+ */
+public class Cercle {
     /**
      * Attributs
      */
@@ -17,21 +23,14 @@ public class Cercle implements ObjetGeometrique {
     }
 
     /**
-     * Méthode pour calculer le périmètre
+     * Méthode pour retourner le périmètre
      *
-     * @return périmètre
+     * @return perimetre
      */
-    @Override
     public double perimetre() {
         return 2 * 3.14 * rayon;
     }
 
-    /**
-     * Méthode pour calculer la surface
-     *
-     * @return surface
-     */
-    @Override
     public double surface() {
         double perimetre = this.perimetre();
         return perimetre / 3.14;
@@ -42,7 +41,6 @@ public class Cercle implements ObjetGeometrique {
      *
      * @return String
      */
-    @Override
     public String toString() {
         return "Le cercle a un rayon de " + rayon + ", son périmetre est donc de : " + this.perimetre() + " et sa surface est de : " + this.surface();
     }
