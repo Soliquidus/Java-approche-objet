@@ -37,27 +37,34 @@ public abstract class Personnage {
     public Personnage() {
     }
 
+    /**
+     * Méthode pour créer un personnage d'une classe
+     * spécifique avec des statistiques aléatoires
+     *
+     * @param personnage
+     * @return personnage
+     */
     public Personnage creerPersonnage(Personnage personnage) {
         String typePersonnage = personnage.getClass().getSimpleName();
         switch (typePersonnage) {
             case "Joueur":
                 force = getRandomNumber(12, 18);
-                pointsDeVie = getRandomNumber(20,50);
+                pointsDeVie = getRandomNumber(20, 50);
                 score = 0;
                 return new Joueur(force, pointsDeVie, score);
             case "Loup":
                 force = getRandomNumber(3, 8);
-                pointsDeVie = getRandomNumber(5,10);
+                pointsDeVie = getRandomNumber(5, 10);
                 score = 1;
                 return new Loup(force, pointsDeVie, score);
             case "Gobelin":
                 force = getRandomNumber(5, 10);
-                pointsDeVie = getRandomNumber(10,15);
+                pointsDeVie = getRandomNumber(10, 15);
                 score = 2;
                 return new Gobelin(force, pointsDeVie, score);
             case "Troll":
                 force = getRandomNumber(10, 15);
-                pointsDeVie = getRandomNumber(20,30);
+                pointsDeVie = getRandomNumber(20, 30);
                 score = 5;
                 return new Gobelin(force, pointsDeVie, score);
         }
