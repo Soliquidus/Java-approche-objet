@@ -2,6 +2,7 @@ package liste;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Iterator;
 
 /**
  * TP 10 - Apprendre à utiliser List et ArrayList
@@ -33,27 +34,31 @@ public class TestVille {
             }
         }
         System.out.println(nomVille + ", " + habitants + " habitants.");
-        System.out.println("--------------------");
+        System.out.println("------------------------------");
 
         System.out.println("Suppression de la ville la moins peuplée : ");
-        //Je fais une copie du tableau histoire de garder l'ordre d'origine dans l'original
+        //Je fais une copie du tableau pour garder l'ordre original dans le tableau de base
         ArrayList<Ville> copieTableau;
         copieTableau = (ArrayList)villes.clone();
         Collections.sort(copieTableau);
         Ville petiteVille = copieTableau.get(0);
-        copieTableau.clear();
-        //Ja rajoute seulement la ville la plus petite
-        copieTableau.add(petiteVille);
         System.out.println(petiteVille.nom + ", " + petiteVille.habitants + " habitants.");
-        System.out.println("--------------------");
+        System.out.println("------------------------------");
 
         System.out.println("Tableau mis à jouer sans l'élément supprimé auparavant : ");
-        //Je supprime la ville grâce à la copie du tableau qui contient la valeur non désirée
-        villes.removeAll(copieTableau);
+//        Autre méthode :
+//        villes.removeIf(ville -> ville.getHabitants() == petiteVille.getHabitants());
+        Iterator<Ville> iterator = villes.iterator();
+        while (iterator.hasNext()){
+            Ville ville = iterator.next();
+            if(ville.getHabitants() == petiteVille.getHabitants()){
+                iterator.remove();
+            }
+        }
         for(Ville ville : villes){
             System.out.println(ville.nom + ", " + ville.habitants + " habitants.");
         }
-        System.out.println("--------------------");
+        System.out.println("------------------------------");
 
         System.out.println("Les villes de plus de 100 000 habitants sont en majuscules : ");
         for(Ville ville : villes){
@@ -62,6 +67,6 @@ public class TestVille {
             }
             System.out.println(ville.nom + ", " + ville.habitants + " habitants.");
         }
-        System.out.println("--------------------");
+        System.out.println("------------------------------");
     }
 }
