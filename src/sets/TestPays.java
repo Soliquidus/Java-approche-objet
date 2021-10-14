@@ -1,8 +1,6 @@
 package sets;
 
-import java.util.Collections;
 import java.util.HashSet;
-import java.util.Iterator;
 
 /**
  * TP 11 - Apprendre à utiliser Set et HashSet
@@ -50,6 +48,7 @@ public class TestPays {
         System.out.println("------------------------------");
 
         System.out.println("Eléments de la collection avec le pays au PIB le plus bas en majuscules : ");
+        //Initialisation d'un objet pour pouvoir commencer la comparaison
         Pays pibMinimum = new Pays("Inde", 145_934_462, 4.9337);
         for(Pays unPays : pays){
             if(unPays.calculerPibTotal() < pibMinimum.calculerPibTotal())
