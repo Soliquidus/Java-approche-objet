@@ -1,4 +1,4 @@
-package tp.interfaces;
+package interfaces;
 /** Liste les méthodes obligatoires que doit posséder un objet géométrique
  * @author DIGINAMIC
  */
