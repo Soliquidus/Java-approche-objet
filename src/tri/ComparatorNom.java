@@ -15,7 +15,6 @@ public class ComparatorNom implements Comparator<Ville> {
 
     @Override
     public int compare(Ville ville, Ville autreVille) {
-        int result = ville.getNom().compareTo(autreVille.getNom());
-        return result;
+        return ville.getNom().compareTo(autreVille.getNom());
     }
 }

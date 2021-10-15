@@ -15,12 +15,6 @@ public class ComparatorHabitant implements Comparator<Ville> {
 
     @Override
     public int compare(Ville ville, Ville autreVille) {
-        if(ville.getHabitants() > autreVille.getHabitants()){
-            return 1;
-        }
-        if(ville.getHabitants() < autreVille.getHabitants()){
-            return -1;
-        }
-        return 0;
+        return Integer.compare(ville.getHabitants(), autreVille.getHabitants());
     }
 }

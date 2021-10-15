@@ -12,12 +12,13 @@ public class Menu {
         Scanner sc = new Scanner(System.in);
 
         //Menu du jeu, les touches étant simples et peu nombreuses, on décide de ne l'afficher qu'une fois durant une partie.
-        System.out.println("-- Menu du jeu --");
-        System.out.println("1 -> Créer le personnage");
-        System.out.println("2 -> Combattre une créature");
-        System.out.println("3 -> Afficher score");
-        System.out.println("4 -> Quitter le jeu");
-        System.out.println("-- -- -- -- -- --");
+        System.out.println("-- Menu du jeu --\n" +
+                        "1 -> Créer le personnage\n" +
+                        "2 -> Combattre une créature\n" +
+                        "3 -> Afficher score\n" +
+                        "4 -> Quitter le jeu\n" +
+                        "-- -- -- -- -- --"
+                );
 
         //Boucle de jeu
         do {

@@ -1,4 +1,4 @@
-package tp.interfaces;
+package interfaces;
 
 public class TestObjetGeometrique {
     public static void main(String[] args) {
