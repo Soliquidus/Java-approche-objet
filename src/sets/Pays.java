@@ -1,4 +1,12 @@
 package sets;
+
+import annotations.Rule;
+import annotations.ToString;
+import annotations.Validator;
+import fr.diginamic.testexceptions.ReflectionsException;
+import fr.diginamic.testexceptions.RuleException;
+
+
 /**
  * TP 11 - Apprendre à utiliser Set et HashSet
  *
@@ -8,11 +16,18 @@ package sets;
  */
 public class Pays implements Comparable {
 //    Exercice 3 - Voir aussi classe TestPays
+//    TP4 - Annotations
     /**
      * Attributs
      */
+    @ToString(separateur = "->", upperCase = true)
     String nom;
+
+    @Rule(min = 0)
+    @ToString(separateur = "habitants,")
     long habitants;
+
+    @ToString(separateur = "$ de PIB/habitants")
     double pibHabitant;
 
     /**
@@ -21,10 +36,11 @@ public class Pays implements Comparable {
      * @param habitants
      * @param pibHabitant
      */
-    public Pays(String nom, long habitants, double pibHabitant) {
+    public Pays(String nom, long habitants, double pibHabitant) throws RuleException,IllegalArgumentException, IllegalAccessException, ReflectionsException {
         this.nom = nom;
         this.habitants = habitants;
         this.pibHabitant = pibHabitant;
+        Validator.valider(this);
     }
 
     /**
@@ -89,4 +105,5 @@ public class Pays implements Comparable {
         double comparePib = ((Pays)pays).getPib();
         return (int) (this.pibHabitant-comparePib);
     }
+
 }

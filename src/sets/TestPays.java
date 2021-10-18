@@ -1,5 +1,9 @@
 package sets;
 
+import fr.diginamic.testexceptions.ReflectionsException;
+import fr.diginamic.testexceptions.RuleException;
+
+import javax.management.ReflectionException;
 import java.util.HashSet;
 
 /**
@@ -10,7 +14,7 @@ import java.util.HashSet;
  * @since 13/10/2021
  */
 public class TestPays {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws RuleException, IllegalAccessException, ReflectionsException {
 //        Exercice 3
         HashSet<Pays> pays = new HashSet<>();
         pays.add(new Pays("USA", 331_002_651, 1.7974));
