@@ -1,5 +1,6 @@
 package tri;
 
+import fr.diginamic.testenumeration.Continent;
 import liste.Ville;
 
 import java.util.ArrayList;
@@ -15,14 +16,14 @@ import java.util.Collections;
 public class TestTri {
     public static void main(String[] args) {
 //        Exercice 1 | 3
-        Ville nice = new Ville("Nice", 343_000);
-        Ville carcassonne = new Ville("Carcassonne", 47_800);
-        Ville narbonne = new Ville("Narbonne", 53_400);
-        Ville lyon = new Ville("Lyon", 484_000);
-        Ville foix = new Ville("Foix", 9_700);
-        Ville pau = new Ville("Pau", 77_200);
-        Ville marseille = new Ville("Marseille", 850_700);
-        Ville tarbes = new Ville("Tarbes", 40_600);
+        Ville nice = new Ville("Nice", 343_000, Continent.EUROPE);
+        Ville carcassonne = new Ville("Carcassonne", 47_800, Continent.EUROPE);
+        Ville narbonne = new Ville("Narbonne", 53_400, Continent.EUROPE);
+        Ville lyon = new Ville("Lyon", 484_000, Continent.EUROPE);
+        Ville foix = new Ville("Foix", 9_700, Continent.EUROPE);
+        Ville pau = new Ville("Pau", 77_200, Continent.EUROPE);
+        Ville marseille = new Ville("Marseille", 850_700, Continent.EUROPE);
+        Ville tarbes = new Ville("Tarbes", 40_600, Continent.EUROPE);
 
         ArrayList<Ville> villesList = new ArrayList<>();
         villesList.add(nice);
