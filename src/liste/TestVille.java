@@ -27,7 +27,7 @@ public class TestVille {
         villes.add(new Ville("Tarbes", 40_600, Continent.EUROPE));
 
         System.out.println("La ville la plus peuplée du tableau : ");
-        int habitants = 0;
+        long habitants = 0;
         String nomVille = null;
         for (Ville ville : villes){
             if(habitants == 0 || nomVille == null || ville.habitants > habitants){
