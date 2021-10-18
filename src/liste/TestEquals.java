@@ -1,5 +1,7 @@
 package liste;
 
+import fr.diginamic.testenumeration.Continent;
+
 /**
  * TP - Apprendre à redéfinir Equals
  *
@@ -9,8 +11,8 @@ package liste;
  */
 public class TestEquals {
     public static void main(String[] args) {
-        Ville nantes = new Ville("Nantes", 350_000);
-        Ville nantes2 = new Ville("Nantes", 350_000);
+        Ville nantes = new Ville("Nantes", 350_000, Continent.EUROPE);
+        Ville nantes2 = new Ville("Nantes", 350_000, Continent.EUROPE);
 
         boolean equals;
 

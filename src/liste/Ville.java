@@ -1,5 +1,7 @@
 package liste;
 
+import fr.diginamic.testenumeration.Continent;
+
 /**
  * TP 10 - Apprendre à utiliser List et ArrayList
  *
@@ -19,15 +21,22 @@ public class Ville implements Comparable<Ville> {
      */
     int habitants;
 
+    //TP - Les Enumerations
+    /**
+     * The continent.
+     */
+    Continent continent;
+
     /**
      * Constructeur
      *
      * @param nom       the nom
      * @param habitants the habitants
      */
-    public Ville(String nom, int habitants) {
+    public Ville(String nom, int habitants, Continent continent) {
         this.nom = nom;
         this.habitants = habitants;
+        this.continent = continent;
     }
 
     /**
@@ -76,6 +85,19 @@ public class Ville implements Comparable<Ville> {
     public int compareTo(Ville ville) {
         int compareHabitants = ((Ville) ville).getHabitants();
         return this.habitants - compareHabitants;
+    }
+
+    public Continent getContinent() {
+        return continent;
+    }
+
+    public void setContinent(Continent continent) {
+        this.continent = continent;
+    }
+
+    @Override
+    public String toString() {
+        return "Ville : " + nom + ", habitants : " + habitants + ", continent : " + continent + ".";
     }
 
     //TP - Apprendre à redéfinir EQUALS
